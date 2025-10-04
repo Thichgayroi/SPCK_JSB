@@ -32,7 +32,7 @@
     	<li class="nav-item"> <a class="nav-link" href="#">Thuật toán sắp xếp</a>
 		    <ul class="nav flex-column">
 		      <li class="nav-item">
-		        <a class="nav-link" href="bubble_sort.html">Bubble Sort</a>
+		        <a class="nav-link active" href="#">Bubble Sort</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Insertion Sort</a>
@@ -70,5 +70,22 @@
 	</ul>
   </div>
 
+   <div class="content" style="background:#f1f1f1; border:1px solid #ccc;">
+	    <h5 class="card-title">Python</h5>
+    <div class="card mt-3" style="background:#fff; border:1px solid #ddd; padding:10px; border-left:5px solid green;">
+
+      	<pre>
+mylist = [64, 34, 25, 12, 22, 11, 90, 5]
+
+n = len(mylist)
+for i in range(n-1):
+  for j in range(n-i-1):
+    if mylist[j] > mylist[j+1]:
+      mylist[j], mylist[j+1] = mylist[j+1], mylist[j]
+
+print(mylist)
+      	</pre>
+    </div>
+  </div>
 </body>
 </html>

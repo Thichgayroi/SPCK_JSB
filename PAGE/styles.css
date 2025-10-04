@@ -11,9 +11,10 @@
 }
 .content {
   margin-left: 220px;
-  margin-top: 56px; /* tránh đè lên navbar */
+  margin-top: 100px; /* tránh đè lên navbar */
   padding: 20px;
 }
+
 .sidebar .nav-link {
   color: #333;
 }
