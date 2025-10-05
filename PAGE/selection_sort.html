@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar-->
+  <!-- Navbar trên cùng -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">TLTT</a>
@@ -25,20 +25,20 @@
     </div>
   </nav>
 
-  <!-- Sidebar-->
+  <!-- Sidebar bên trái -->
   <div class="sidebar">
     <h5 class="px-3">Thuật toán</h5>
     <ul>
     	<li class="nav-item"> <a class="nav-link" href="#">Thuật toán sắp xếp</a>
 		    <ul class="nav flex-column">
 		      <li class="nav-item">
-		        <a class="nav-link" href="bubble_sort.html">Bubble Sort</a>
+		        <a class="nav-link" href="#">Bubble Sort</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Insertion Sort</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="selection_sort.html">Selection Sort</a>
+		        <a class="nav-link active" href="#">Selection Sort</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Merge Sort</a>
@@ -69,6 +69,31 @@
 	   	<li class="nav-item"> <a class="nav-link" href="#">Đệ Quy(Recursion)</a></li>
 	</ul>
   </div>
+
+   <div class="content" style="background:#f1f1f1; border:1px solid #ccc;">
+	    <h5 class="card-title">Python</h5>
+    <div class="card mt-3" style="background:#fff; border:1px solid #ddd; padding:10px; border-left:5px solid green;">
+
+      	<pre>
+def selection_sort(arr):
+    for i in range(len(arr)-1):
+        min_index = i
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+
+# Ví dụ mảng
+a = [5, 3, 8, 1, 2]
+
+selection_sort(a)
+
+print("Mảng sau khi sắp xếp:", a)
+      	</pre>
+    </div>
+  </div>
+
+
 
 </body>
 </html>

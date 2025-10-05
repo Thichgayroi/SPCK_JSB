@@ -38,7 +38,7 @@
 		        <a class="nav-link" href="#">Insertion Sort</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Selection Sort</a>
+		        <a class="nav-link" href="selection_sort.html">Selection Sort</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Merge Sort</a>
@@ -75,17 +75,24 @@
     <div class="card mt-3" style="background:#fff; border:1px solid #ddd; padding:10px; border-left:5px solid green;">
 
       	<pre>
-mylist = [64, 34, 25, 12, 22, 11, 90, 5]
+def bubble_sort(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr) - 1 - i):
+            if(arr[j] > arr[j+1]):
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
 
-n = len(mylist)
-for i in range(n-1):
-  for j in range(n-i-1):
-    if mylist[j] > mylist[j+1]:
-      mylist[j], mylist[j+1] = mylist[j+1], mylist[j]
+# Ví dụ mảng
+array = [5, 3, 8, 1, 2]
 
-print(mylist)
+bubble_sort(array)
+
+print(bubble_sort(array))
       	</pre>
     </div>
   </div>
+
+
+
 </body>
 </html>
