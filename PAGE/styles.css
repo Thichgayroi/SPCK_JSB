@@ -13,7 +13,21 @@
   margin-left: 220px;
   margin-top: 100px; /* tránh đè lên navbar */
   padding: 20px;
+  background:#f1f1f1; 
+  border:1px solid #ccc; 
+  margin-left:230px;
+  width:800px;
+  border-radius: 10px;
 }
+
+.card_mt-3{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:335px
+}
+
 
 .sidebar .nav-link {
   color: #333;
@@ -33,3 +47,38 @@
 .navbar-brand{
   font-size:30px;
 }
+
+#name,#paw,#mail{
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      padding: 0px 5px;
+      font-size: 16px;
+      background: transparent;
+      outline: none;
+}
+
+#name:focus {
+  border-bottom: 3px solid #3f51b5; /* Highlight màu xanh khi focus */
+}
+
+#paw:focus {
+  border-bottom: 3px solid #3f51b5; /* Highlight màu xanh khi focus */
+}
+
+#mail:focus {
+  border-bottom: 3px solid #3f51b5; /* Highlight màu xanh khi focus */
+}
+
+button{
+  background-color: #1977D2; 
+  border-radius:5px; 
+  font-size:13px;
+  width:310px; 
+  height:40px; 
+  border:0px; 
+  color:white;
+  font-weight: bold;
+}
+
+

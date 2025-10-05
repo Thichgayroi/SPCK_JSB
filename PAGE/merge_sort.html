@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar-->
+  <!-- Navbar trên cùng -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">TLTT</a>
@@ -25,7 +25,7 @@
     </div>
   </nav>
 
-  <!-- Sidebar-->
+  <!-- Sidebar bên trái -->
   <div class="sidebar">
     <h5 class="px-3">Thuật toán</h5>
     <ul>
@@ -38,10 +38,10 @@
 		        <a class="nav-link" href="#">Insertion Sort</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="PAGE/selection_sort.html">Selection Sort</a>
+		        <a class="nav-link" href="selection_sort.html">Selection Sort</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="PAGE/merge_sort.html">Merge Sort</a>
+		        <a class="nav-link active" href="#">Merge Sort</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Quick Sort</a>
@@ -69,6 +69,54 @@
 	   	<li class="nav-item"> <a class="nav-link" href="#">Đệ Quy(Recursion)</a></li>
 	</ul>
   </div>
+
+   <div class="content" style="background:#f1f1f1; border:1px solid #ccc;">
+	    <h5 class="card-title">Python</h5>
+    <div class="card mt-3" style="background:#fff; border:1px solid #ddd; padding:10px; border-left:5px solid green;">
+
+      	<pre>
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2  # Chia đôi mảng
+        left = arr[:mid]
+        right = arr[mid:]
+
+        # Đệ quy sắp xếp 2 nửa
+        merge_sort(left)
+        merge_sort(right)
+
+        # Trộn hai nửa lại
+        i = j = k = 0
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                arr[k] = left[i]
+                i += 1
+            else:
+                arr[k] = right[j]
+                j += 1
+            k += 1
+
+        # Thêm các phần tử còn lại
+        while i < len(left):
+            arr[k] = left[i]
+            i += 1
+            k += 1
+
+        while j < len(right):
+            arr[k] = right[j]
+            j += 1
+            k += 1
+
+# Ví dụ mảng
+arr = [38, 27, 43, 3, 9, 82, 10]
+merge_sort(arr)
+print("Mảng sau khi sắp xếp:", arr)
+
+      	</pre>
+    </div>
+  </div>
+
+
 
 </body>
 </html>
