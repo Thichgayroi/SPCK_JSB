@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang Chủ</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="icon" type="image/png" href="../IMG/lg.png">
 </head>
 <body>
   <!-- Navbar trên cùng -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
+    	<img style="margin-right:15px;" src="../IMG/lg.png" alt="Die">
       <a class="navbar-brand" href="#">TLTT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Trang chủ </a></li>
+
+          <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Giới thiệu </a></li>
           <li class="nav-item"><a class="nav-link" href="#">Liên hệ </a></li>
         </ul>
@@ -35,7 +38,7 @@
 		        <a class="nav-link active" href="#">Bubble Sort</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Insertion Sort</a>
+		        <a class="nav-link" href="insertion_sort.html">Insertion Sort</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="selection_sort.html">Selection Sort</a>
@@ -43,15 +46,13 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="merge_sort.html">Merge Sort</a>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Quick Sort</a>
-		      </li>
+
 		    </ul>
 	    </li>
 	    <li class="nav-item"> <a class="nav-link" href="#">Thuật toán tìm kiếm</a>
 	    	<ul class="nav flex-column">
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Binary search</a>
+		        <a class="nav-link" href="binary_search.html">Binary search</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Ternary search</a>
@@ -66,14 +67,14 @@
 	    </li>
 	    <li class="nav-item"> <a class="nav-link" href="#">Quy hoạch động
 	    (Dynamic Programming)</a></li>
-	   	<li class="nav-item"> <a class="nav-link" href="#">Đệ Quy(Recursion)</a></li>
+	   	<li class="nav-item"> <a class="nav-link" href="recursion.html">Đệ Quy(Recursion)</a></li>
 	</ul>
   </div>
 
+  <!-- Code thuật toán -->
    <div class="content">
 	    <h5 class="card-title">Python</h5>
     <div class="card_mt-3">
-
       	<pre>
 def bubble_sort(arr):
     for i in range(len(arr)):
@@ -92,7 +93,25 @@ print(bubble_sort(array))
     </div>
   </div>
 
+  <!-- Độ phức tạp thời gian  -->
+   <div class="content" style="margin-top:50px;">
+	    <h5 class="card-title">Time Complexity</h5>
+    <div id="tc">
+      	<pre>
+O(n^2)
+      	</pre>
+    </div>
+  </div>
 
+  <!-- Độ phức tạp về không gian -->
+   <div class="content" style="margin-top:50px;">
+	    <h5 class="card-title">Space Complexity</h5>
+    <div id="sc">
+      	<pre>
+O(1)
+      	</pre>
+    </div>
+  </div>
 
 </body>
 </html>

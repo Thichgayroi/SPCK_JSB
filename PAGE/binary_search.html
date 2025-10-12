@@ -42,15 +42,14 @@
 		        <a class="nav-link" href="selection_sort.html">Selection Sort</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link active" href="#">Merge Sort</a>
+		        <a class="nav-link" href="merge_sort.html">Merge Sort</a>
 		      </li>
-
 		    </ul>
 	    </li>
 	    <li class="nav-item"> <a class="nav-link" href="#">Thuật toán tìm kiếm</a>
 	    	<ul class="nav flex-column">
 		      <li class="nav-item">
-		        <a class="nav-link" href="binary_search.html">Binary search</a>
+		        <a class="nav-link active" href="#">Binary search</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Ternary search</a>
@@ -65,76 +64,64 @@
 	    </li>
 	    <li class="nav-item"> <a class="nav-link" href="#">Quy hoạch động
 	    (Dynamic Programming)</a></li>
-	   	<li class="nav-item"> <a class="nav-link" href="#">Đệ Quy(Recursion)</a></li>
+	   	<li class="nav-item"> <a class="nav-link" href="recursion.html">Đệ Quy(Recursion)</a></li>
 	</ul>
   </div>
 
    <div class="content">
 	    <h5 class="card-title">Python</h5>
-    <div class="card_mt-3" style="height: 800px;">
+    <div id="bs">
 
       	<pre>
-def merge_sort(arr):
-    if len(arr) > 1:
-        mid = len(arr) // 2  # Chia đôi mảng
-        left = arr[:mid]
-        right = arr[mid:]
+def binary_search(arr, x):
+    left, right = 0, len(arr) - 1
 
-        # Đệ quy sắp xếp 2 nửa
-        merge_sort(left)
-        merge_sort(right)
+    while left <= right:
+        mid = (left + right) // 2
 
-        # Trộn hai nửa lại
-        i = j = k = 0
-        while i < len(left) and j < len(right):
-            if left[i] < right[j]:
-                arr[k] = left[i]
-                i += 1
-            else:
-                arr[k] = right[j]
-                j += 1
-            k += 1
+        if arr[mid] == x:
+            return mid  # Trả về vị trí tìm thấy
+        elif arr[mid] < x:
+            left = mid + 1  # Tìm bên phải
+        else:
+            right = mid - 1  # Tìm bên trái
 
-        # Thêm các phần tử còn lại
-        while i < len(left):
-            arr[k] = left[i]
-            i += 1
-            k += 1
+    return -1  # Không tìm thấy
 
-        while j < len(right):
-            arr[k] = right[j]
-            j += 1
-            k += 1
 
-# Ví dụ mảng
-arr = [38, 27, 43, 3, 9, 82, 10]
-merge_sort(arr)
-print("Mảng sau khi sắp xếp:", arr)
+# Ví dụ sử dụng:
+arr = [1, 3, 5, 7, 9, 11]
+x = 7
+
+result = binary_search(arr, x)
+if result != -1:
+    print(f"Tìm thấy {x} tại vị trí {result}")
+else:
+    print("Không tìm thấy!")
 
       	</pre>
     </div>
   </div>
 
-    <!-- Độ phức tạp về thời gian -->
+  	<!-- Độ phức tạp về thời gian -->
    <div class="content" style="margin-top:50px;">
-      <h5 class="card-title">Time Complexity</h5>
+	    <h5 class="card-title">Time Complexity</h5>
     <div id="tc">
-        <pre>
-O(n log n)
-        </pre>
+      	<pre>
+O(log n)
+      	</pre>
     </div>
   </div>
 
-    <!-- Độ phức tạp về không gian -->
+  	<!-- Độ phức tạp về không gian  -->
    <div class="content" style="margin-top:50px;">
-      <h5 class="card-title">Space Complexity</h5>
+	    <h5 class="card-title">Space Complexity</h5>
     <div id="sc">
-        <pre>
-O(n)
-        </pre>
+      	<pre>
+O(1)
+      	</pre>
     </div>
   </div>
-
 
 </body>
 </html>

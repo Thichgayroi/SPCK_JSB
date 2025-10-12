@@ -36,15 +36,14 @@
 		        <a class="nav-link" href="bubble_sort.html">Bubble Sort</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="insertion_sort.html">Insertion Sort</a>
+		        <a class="nav-link active" href="#">Insertion Sort</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="selection_sort.html">Selection Sort</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link active" href="#">Merge Sort</a>
+		        <a class="nav-link" href="merge_sort.html">Merge Sort</a>
 		      </li>
-
 		    </ul>
 	    </li>
 	    <li class="nav-item"> <a class="nav-link" href="#">Thuật toán tìm kiếm</a>
@@ -71,70 +70,46 @@
 
    <div class="content">
 	    <h5 class="card-title">Python</h5>
-    <div class="card_mt-3" style="height: 800px;">
-
+    <div id="is">
       	<pre>
-def merge_sort(arr):
-    if len(arr) > 1:
-        mid = len(arr) // 2  # Chia đôi mảng
-        left = arr[:mid]
-        right = arr[mid:]
+def insertion_sort(arr):
+    n = len(arr)
+     
+    if n <= 1:
+        return
 
-        # Đệ quy sắp xếp 2 nửa
-        merge_sort(left)
-        merge_sort(right)
-
-        # Trộn hai nửa lại
-        i = j = k = 0
-        while i < len(left) and j < len(right):
-            if left[i] < right[j]:
-                arr[k] = left[i]
-                i += 1
-            else:
-                arr[k] = right[j]
-                j += 1
-            k += 1
-
-        # Thêm các phần tử còn lại
-        while i < len(left):
-            arr[k] = left[i]
-            i += 1
-            k += 1
-
-        while j < len(right):
-            arr[k] = right[j]
-            j += 1
-            k += 1
-
-# Ví dụ mảng
-arr = [38, 27, 43, 3, 9, 82, 10]
-merge_sort(arr)
-print("Mảng sau khi sắp xếp:", arr)
-
+    for i in range(1, n):  
+        key = arr[i] 
+        j = i-1
+        while j >= 0 and key < arr[j]: 
+            arr[j+1] = arr[j]
+            j -= 1
+        arr[j+1] = key
+ 
+arr = [12, 11, 13, 5, 6]
+insertion_sort(arr)
+print(arr)
+      	</pre>
+    </div>
+  </div>
+   <div class="content" style="margin-top:50px;">
+	    <h5 class="card-title">Time Complexity</h5>
+    <div id="tc">
+      	<pre>
+O(n^2)
       	</pre>
     </div>
   </div>
 
-    <!-- Độ phức tạp về thời gian -->
-   <div class="content" style="margin-top:50px;">
-      <h5 class="card-title">Time Complexity</h5>
-    <div id="tc">
-        <pre>
-O(n log n)
-        </pre>
-    </div>
   </div>
-
-    <!-- Độ phức tạp về không gian -->
    <div class="content" style="margin-top:50px;">
-      <h5 class="card-title">Space Complexity</h5>
+	    <h5 class="card-title">Space Complexity</h5>
     <div id="sc">
-        <pre>
-O(n)
-        </pre>
+      	<pre>
+O(1)
+      	</pre>
     </div>
   </div>
-
 
 </body>
 </html>
