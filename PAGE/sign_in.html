@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head style="background: linear-gradient(135deg, #ff9a9e, #8EC5FC); height:100%;margin:0;padding:0;background-attachment: fixed;">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login</title>
+	<title>Sign In</title>
 	<link rel="stylesheet" href="../CSS/styles.css">
   	<link rel="icon" type="image/png" href="../IMG/lg.png">
+	<style>
+/*		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: #fff;
+			font-family: Arial, sans-serif;
+		}*/
+
+
+		h1 {
+			text-align: center;
+			font-weight: normal;
+			font-size: 42px;
+			margin-top: 0;
+		}
+
+
+
+		h5 {
+			font-weight: normal;
+			text-align: center;
+			margin: 10px 0 0;
+		}
+
+	</style>
 </head>
-<body>
-	<fieldset style="border-radius: 5px; font-family:Arial">
-		<h1 style="display: flex; justify-content: center; align-items: center; font-weight: normal; font-size:42px">Sign in</h1>
-		<div class="container" style="display:flex; justify-content: center; align-items: center; height: 400px;">
-			<form action="">
-				<label for="username">Username</label>
-				<br> <br>
-				<input type="text" style="width: 300px; height: 30px;" name="username" id=name>
-				<br> <br>
+<body style="background: linear-gradient(135deg, #ff9a9e, #8EC5FC); height:100%;margin:0;padding:0;background-attachment: fixed;">
+	<fieldset>
+		<h1>Sign in</h1>
+		<form action="">
+			<label for="username">Username</label>
+			<input type="text" name="username" id="name">
 
-				<label for="password">Password</label>
-				<br> <br>
-				<input type="password" style="width: 300px; height: 30px;" name="password" id=paw>
+			<label for="password">Password</label>
+			<input type="password" name="password" id="paw">
 
-				<br> <br>
-				<button>Sign in</button>
+			<button type="submit">Sign in</button>
 
-				<h5 style="font-weight: normal; text-align: center;">Forgot <a href="">Password?</a></h5>	
-				<h5 style="font-weight: normal; text-align: center;">Dont have an account? <a href="sign_up.html">Sign up</a></h5>
-			</form>
-		</div>
+			<h5 style="margin-top: 30px;">Forgot <a href="#">Password?</a></h5>	
+			<h5 style="margin-top: 30px;">Don't have an account? <a href="sign_up.html">Sign up</a></h5>
+		</form>
 	</fieldset>
 </body>
 </html>

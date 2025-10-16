@@ -7,11 +7,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/styles.css">
   <link rel="icon" type="image/png" href="../IMG/lg.png">
+  <style>
+
+    .content h2 {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 17px;
+      color: #333;
+      line-height: 1.7;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
+      <img style="margin-right:15px;" src="../IMG/lg.png" alt="Die" width="35">
       <a class="navbar-brand" href="#">TLTT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -30,46 +44,47 @@
   <div class="sidebar">
     <h5 class="px-3">Thuật toán</h5>
     <ul>
-    	<li class="nav-item"> <a class="nav-link" href="#">Thuật toán sắp xếp</a>
-		    <ul class="nav flex-column">
-		      <li class="nav-item">
-		        <a class="nav-link" href="bubble_sort.html">Bubble Sort</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Insertion Sort</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="PAGE/selection_sort.html">Selection Sort</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="PAGE/merge_sort.html">Merge Sort</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Quick Sort</a>
-		      </li>
-		    </ul>
-	    </li>
-	    <li class="nav-item"> <a class="nav-link" href="#">Thuật toán tìm kiếm</a>
-	    	<ul class="nav flex-column">
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Binary search</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Ternary search</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Linear search</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Jump search</a>
-		      </li>
-		    </ul>
-	    </li>
-	    <li class="nav-item"> <a class="nav-link" href="#">Quy hoạch động
-	    (Dynamic Programming)</a></li>
-	   	<li class="nav-item"> <a class="nav-link" href="#">Đệ Quy(Recursion)</a></li>
-	</ul>
+      <li class="nav-item"> <a class="nav-link" href="#">Thuật toán sắp xếp</a>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="bubble_sort.html">Bubble Sort</a></li>
+          <li class="nav-item"><a class="nav-link" href="insertion_sort.html">Insertion Sort</a></li>
+          <li class="nav-item"><a class="nav-link" href="selection_sort.html">Selection Sort</a></li>
+          <li class="nav-item"><a class="nav-link" href="merge_sort.html">Merge Sort</a></li>
+          <li class="nav-item"><a class="nav-link" href="quick_sort.html">Quick Sort</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Thuật toán tìm kiếm</a>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="binary_search.html">Binary search</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ternary search</a></li>
+          <li class="nav-item"><a class="nav-link" href="linear_search.html">Linear search</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Jump search</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Quy hoạch động (Dynamic Programming)</a></li>
+      <li class="nav-item"> <a class="nav-link" href="#">Đệ Quy (Recursion)</a></li>
+    </ul>
   </div>
 
+  <!-- Main Content -->
+  <div class="content" id="introd">
+    <h2>Chào mừng bạn đến với TLTT!</h2>
+    <p>
+      Trang web này được xây dựng nhằm giúp bạn tìm hiểu và thực hành các <strong>thuật toán cơ bản</strong> 
+      như sắp xếp, tìm kiếm, quy hoạch động và đệ quy.  
+      Tại đây, bạn có thể khám phá từng thuật toán, xem cách hoạt động của chúng, 
+      và học cách cài đặt bằng các ngôn ngữ lập trình khác nhau.
+    </p>
+    <p>
+      Hãy bắt đầu bằng cách chọn một thuật toán ở menu bên trái để khám phá nhé.  
+      Mỗi phần sẽ cung cấp mô tả, ví dụ minh họa, cùng độ phức tạp về thời gian và không gian của thuật toán đó.
+    </p>
+
+    <div class="alert alert-info mt-4">
+      💡 <strong>Gợi ý hôm nay:</strong> Hãy thử bắt đầu với <em>Bubble Sort</em> — thuật toán đơn giản nhưng cực kỳ hữu ích để hiểu các khái niệm cơ bản!
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

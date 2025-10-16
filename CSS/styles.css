@@ -1,0 +1,179 @@
+.sidebar {
+  position: fixed;
+  top: 69px; /* để không đè lên navbar */
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+.content {
+  margin-left: 220px;
+  margin-top: 100px; /* tránh đè lên navbar */
+  padding: 20px;
+  background:#f1f1f1; 
+  border:1px solid #ccc; 
+  margin-left:230px;
+  width:800px;
+  border-radius: 10px;
+}
+
+.card_mt-3{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:335px
+}
+
+
+.sidebar .nav-link {
+  color: #333;
+}
+.sidebar .nav-link.active {
+  background-color: #198754;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* đẩy sang trái */
+  background: #222;
+  padding: 10px;
+}
+
+.navbar-brand{
+  font-size:30px;
+}
+
+#introd {
+  margin-left: 220px;
+  margin-top: 100px; /* tránh đè lên navbar */
+  padding: 20px;
+  background:#f1f1f1; 
+  border:1px solid #ccc; 
+  margin-left:230px;
+  width:1250px;
+  border-radius: 10px;
+}
+
+#name,#paw,#mail{
+  width: 100%;
+  height:50px;
+  border: none;
+  border-bottom: 2px solid rgba(180, 150, 255, 0.7);
+  padding: 0px 5px;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+#name:focus {
+  border-bottom: 3px solid #8b5cf6; /* Highlight màu xanh khi focus */
+}
+
+#paw:focus {
+  border-bottom: 3px solid #8b5cf6; /* Highlight màu xanh khi focus */
+}
+
+#mail:focus {
+  border-bottom: 3px solid #8b5cf6; /* Highlight màu xanh khi focus */
+}
+
+button{
+  background-color: #1977D2; 
+  border-radius:5px; 
+  font-size:13px;
+  width:100%; 
+  height:40px; 
+  border:0px; 
+  color:white;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: #0b5ed7;
+}
+
+fieldset {
+  border-radius: 8px;
+  font-family: Arial;
+  width: 450px; /* Giới hạn chiều rộng fieldset */
+  margin: 50px auto; /* Căn giữa trang */
+  padding: 50px 40px; /* Khoảng cách trong viền */
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Viền mảnh gọn */
+}
+
+/*Time Complexity*/
+#tc{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:50px
+}
+
+/*Space Complexity*/
+#sc{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:50px
+}
+
+/*Binary search*/
+#bse{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:560px;
+}
+
+/*Insertion sort*/
+#is{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:400px;
+}
+
+
+/*Đệ quy*/
+#rc{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+/*Linear Search*/
+#lse{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:350px;
+}
+
+#rec-c{
+  padding: 20px;
+  background:#f1f1f1; 
+  border:1px solid #ccc; 
+  width:800px;
+  border-radius: 10px;
+}
+
+#rec{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:200px
+}
