@@ -28,8 +28,12 @@
   height:335px
 }
 
+.collapse .nav-link {
+  padding-left: 2rem;
+}
 
 .sidebar .nav-link {
+  padding-left: 1.5rem;
   color: #333;
 }
 .sidebar .nav-link.active {
@@ -164,6 +168,8 @@ fieldset {
 
 #rec-c{
   padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background:#f1f1f1; 
   border:1px solid #ccc; 
   width:800px;
@@ -176,4 +182,20 @@ fieldset {
   padding:10px; 
   border-left:5px solid green;
   height:200px
+}
+
+#dp-parag{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+#jse{
+  background:#fff;
+  border:1px solid #ddd; 
+  padding:10px; 
+  border-left:5px solid green;
+  height:930px;
 }
