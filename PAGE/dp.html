@@ -13,7 +13,7 @@
   <!-- Navbar trên cùng -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-    	<img style="margin-right:15px;" src="../IMG/lg.png" alt="Die">
+      <img style="margin-right:15px;" src="../IMG/lg.png" alt="Die">
       <a class="navbar-brand" href="#">TLTT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -27,6 +27,7 @@
       </div>
     </div>
   </nav>
+
 
 <!-- Sidebar bên trái -->
 <div class="sidebar">
@@ -48,7 +49,7 @@
             <a class="nav-link" href="insertion_sort.html">Insertion Sort</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Selection Sort</a>
+            <a class="nav-link" href="selection_sort.html">Selection Sort</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="merge_sort.html">Merge Sort</a>
@@ -86,7 +87,7 @@
 
     <!-- Quy hoạch động -->
     <li class="nav-item mt-2">
-      <a class="nav-link" href="dp.html">Quy hoạch động</a>
+      <a class="nav-link active" href="#">Quy hoạch động</a>
     </li>
 
     <!-- Đệ quy -->
@@ -97,47 +98,33 @@
   </ul>
 </div>
 
-   <div class="content">
-	    <h5 class="card-title">Python</h5>
-    <div class="card_mt-3">
+      <div id="dp-parag">
+        <h1>Giới thiệu về quy hoạch động</h1>
+        <hr>
+        <p>Trong ngành khoa học máy tính, quy hoạch động (dynamic programming) là một phương pháp giảm thời gian chạy của các thuật toán thể hiện các tính chất của các bài toán con gối nhau (overlapping subproblem) và cấu trúc con tối ưu (optimal substructure).</p>
 
-      	<pre>
-def selection_sort(arr):
-    for i in range(len(arr)-1):
-        min_index = i
-        for j in range(i + 1, len(arr)):
-            if arr[j] < arr[min_index]:
-                min_index = j
-        arr[i], arr[min_index] = arr[min_index], arr[i]
+        <h5 style="background-color:yellow;display:inline">Ta có thể giải một bài toán với cấu trúc con tối ưu bằng một quy trình ba bước:</h5>
+        <ol>
+            <li>Chia bài toán thành các bài toán con nhỏ hơn.</li>
+            <li>Giải các bài toán này một cách tối ưu bằng cách sử dụng đệ quy quy trình ba bước này.</li>
+            <li>Sử dụng các kết quả tối ưu đó để xây dựng một lời giải tối ưu cho bài toán ban đầu.</li> 
+        </ol>
 
-# Ví dụ mảng
-a = [5, 3, 8, 1, 2]
+        <p>Ở một số bài toán (Ví dụ: tính số fibonacci) ta có  lưu trữ lời giải của các bài toán con đã giải. Nếu sau này ta cần giải lại chính bài toán đó, ta có thể lấy và sử dụng kết quả đã được tính toán. Hướng tiếp cận này được gọi là lưu trữ (memoization). Để tránh, tốn thời gian tính toán lại lời giải tối ưu cho các bài toán con mà nó đã giải.</p>
 
-selection_sort(a)
+        <h5 style="background-color:yellow;display:inline">Tóm lại, quy hoạch động sử dụng:</h5>
+        <ul>
+          <li>Các bài toán con gối nhau</li>
+          <li>Cấu trúc con tối ưu</li>
+          <li>Memoization</li>
+        </ul>
 
-print("Mảng sau khi sắp xếp:", a)
-      	</pre>
-    </div>
-  </div>
-	<!-- Độ phức tạp về thời gian -->
-   <div class="content" style="margin-top:50px;">
-	    <h5 class="card-title">Time Complexity</h5>
-    <div id="tc">
-      	<pre>
-O(n^2)
-      	</pre>
-    </div>
-  </div>
-
-  <!-- Độ phức tạp về không gian -->
-   <div class="content" style="margin-top:50px;">
-	    <h5 class="card-title">Space Complexity</h5>
-    <div id="sc">
-      	<pre>
-O(1)
-      	</pre>
-    </div>
-  </div>
+        <h5 style="background-color:yellow;display:inline">Quy hoạch động thường dùng một trong hai cách tiếp cận:</h5>
+        <ul>
+          <li> top-down (Từ trên xuống) </li>
+          <li> bottom-up (Từ dưới lên) </li>
+        </ul>
+      </div>
 
 
 </body>

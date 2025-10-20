@@ -13,7 +13,7 @@
   <!-- Navbar trên cùng -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-    	<img style="margin-right:15px;" src="../IMG/lg.png" alt="Die">
+      <img style="margin-right:15px;" src="../IMG/lg.png" alt="Die">
       <a class="navbar-brand" href="#">TLTT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
             <a class="nav-link" href="insertion_sort.html">Insertion Sort</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Selection Sort</a>
+            <a class="nav-link" href="selection_sort.html">Selection Sort</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="merge_sort.html">Merge Sort</a>
@@ -78,7 +78,7 @@
             <a class="nav-link" href="linear_search.html">Linear Search</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="jump_search.html">Jump Search</a>
+            <a class="nav-link active" href="#">Jump Search</a>
           </li>
         </ul>
       </div>
@@ -99,37 +99,75 @@
 
    <div class="content">
 	    <h5 class="card-title">Python</h5>
-    <div class="card_mt-3">
+    <div id="jse">
 
       	<pre>
-def selection_sort(arr):
-    for i in range(len(arr)-1):
-        min_index = i
-        for j in range(i + 1, len(arr)):
-            if arr[j] < arr[min_index]:
-                min_index = j
-        arr[i], arr[min_index] = arr[min_index], arr[i]
+import math
 
-# Ví dụ mảng
-a = [5, 3, 8, 1, 2]
+def jumpSearch( arr , x , n ):
+    
+    # Tìm kích thước khối cần nhảy
+    step = math.sqrt(n)
+    
+    # Tìm khối có phần tử hiện tại (nếu có)
+    prev = 0
+    while arr[int(min(step, n)-1)] < x:
+        prev = step
+        step += math.sqrt(n)
+        if prev >= n:
+            return -1
+    
+    # Thực hiện tìm kiếm tuyến tính cho x trong khối bắt đầu bằng prev.
+    while arr[int(prev)] < x:
+        prev += 1
+        
+        # Nếu chúng ta đến khối tiếp theo hoặc cuối mảng, phần tử không có mặt.
+        if prev == min(step, n):
+            return -1
+    
+    # Nếu phần tử được tìm thấy
+    if arr[int(prev)] == x:
+        return prev
+    
+    return -1
 
-selection_sort(a)
+# Ví dụ 
+arr = [ 0, 1, 1, 2, 3, 5, 8, 13, 21,
+    34, 55, 89, 144, 233, 377, 610 ]
+x = 55
+n = len(arr)
 
-print("Mảng sau khi sắp xếp:", a)
+# Tìm index của 'x' bằng cách sử dụng Jump Search
+index = jumpSearch(arr, x, n)
+
+# In ra index nơi 'x' nằm
+print("Number" , x, "is at index" ,"%.0f"%index)
+
+
       	</pre>
     </div>
   </div>
-	<!-- Độ phức tạp về thời gian -->
+
+  	<!-- Độ phức tạp về thời gian -->
    <div class="content" style="margin-top:50px;">
-	    <h5 class="card-title">Time Complexity</h5>
+        <h5 class="card-title">Time Complexity(Best Case)</h5>
+    <div id="tc">
+        <pre>
+O(1)
+        </pre>
+    </div>
+  </div>
+
+   <div class="content" style="margin-top:50px;">
+	    <h5 class="card-title">Time Complexity(Worst Case)</h5>
     <div id="tc">
       	<pre>
-O(n^2)
+O(√n)
       	</pre>
     </div>
   </div>
 
-  <!-- Độ phức tạp về không gian -->
+  	<!-- Độ phức tạp về không gian  -->
    <div class="content" style="margin-top:50px;">
 	    <h5 class="card-title">Space Complexity</h5>
     <div id="sc">
@@ -138,7 +176,6 @@ O(1)
       	</pre>
     </div>
   </div>
-
 
 </body>
 </html>

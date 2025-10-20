@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang Chủ</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../CSS/styles.css">
   <link rel="icon" type="image/png" href="../IMG/lg.png">
   <style>
@@ -40,31 +41,74 @@
     </div>
   </nav>
 
-  <!-- Sidebar-->
-  <div class="sidebar">
-    <h5 class="px-3">Thuật toán</h5>
-    <ul>
-      <li class="nav-item"> <a class="nav-link" href="#">Thuật toán sắp xếp</a>
-        <ul class="nav flex-column">
-          <li class="nav-item"><a class="nav-link" href="bubble_sort.html">Bubble Sort</a></li>
-          <li class="nav-item"><a class="nav-link" href="insertion_sort.html">Insertion Sort</a></li>
-          <li class="nav-item"><a class="nav-link" href="selection_sort.html">Selection Sort</a></li>
-          <li class="nav-item"><a class="nav-link" href="merge_sort.html">Merge Sort</a></li>
-          <li class="nav-item"><a class="nav-link" href="quick_sort.html">Quick Sort</a></li>
+ <!-- Sidebar bên trái -->
+<div class="sidebar">
+  <h5 class="px-3">Thuật toán</h5>
+  <ul class="nav flex-column">
+
+    <!-- Thuật toán sắp xếp -->
+    <li class="nav-item">
+      <a class="nav-link text-dark" data-bs-toggle="collapse" href="#collapseSort" role="button" aria-expanded="false" aria-controls="collapseSort">
+        Thuật toán sắp xếp
+        <span class="chevron-icon">&#9662;</span>
+      </a>
+      <div class="collapse" id="collapseSort">
+        <ul class="nav flex-column ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="bubble_sort.html">Bubble Sort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="insertion_sort.html">Insertion Sort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="selection_sort.html">Selection Sort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="merge_sort.html">Merge Sort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quick_sort.html">Quick Sort</a>
+          </li>
         </ul>
-      </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Thuật toán tìm kiếm</a>
-        <ul class="nav flex-column">
-          <li class="nav-item"><a class="nav-link" href="binary_search.html">Binary search</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Ternary search</a></li>
-          <li class="nav-item"><a class="nav-link" href="linear_search.html">Linear search</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Jump search</a></li>
+      </div>
+    </li>
+
+    <!-- Thuật toán tìm kiếm -->
+    <li class="nav-item mt-2">
+      <a class="nav-link text-dark" data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseSearch">
+        Thuật toán tìm kiếm
+        <span class="chevron-icon">&#9662;</span>
+      </a>
+      <div class="collapse" id="collapseSearch">
+        <ul class="nav flex-column ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="binary_search.html">Binary Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ternary Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="linear_search.html">Linear Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jump_search.html">Jump Search</a>
+          </li>
         </ul>
-      </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Quy hoạch động (Dynamic Programming)</a></li>
-      <li class="nav-item"> <a class="nav-link" href="#">Đệ Quy (Recursion)</a></li>
-    </ul>
-  </div>
+      </div>
+    </li>
+
+    <!-- Quy hoạch động -->
+    <li class="nav-item mt-2">
+      <a class="nav-link" href="dp.html">Quy hoạch động</a>
+    </li>
+
+    <!-- Đệ quy -->
+    <li class="nav-item mt-2">
+      <a class="nav-link" href="recursion.html">Đệ Quy (Recursion)</a>
+    </li>
+
+  </ul>
+</div>
 
   <!-- Main Content -->
   <div class="content" id="introd">
@@ -81,7 +125,7 @@
     </p>
 
     <div class="alert alert-info mt-4">
-      💡 <strong>Gợi ý hôm nay:</strong> Hãy thử bắt đầu với <em>Bubble Sort</em> — thuật toán đơn giản nhưng cực kỳ hữu ích để hiểu các khái niệm cơ bản!
+      💡 <strong>Có thể bạn không biết :</strong> <em>Big O</em> là kí hiệu mô tả độ phức tạp của thuật toán, đặc biệt là cách thời gian chạy hoặc bộ nhớ của thuật toán đó tăng trưởng khi kích thước đầu vào tăng lên.
     </div>
   </div>
 
