@@ -42,17 +42,8 @@
 			border: 1px solid #ccc;
 		}
 
-		#email{
-			margin: 5px 0px;
-			margin-top: 20px;
-			height: 50px;
-			padding: 7px;
-			padding-left: 15px;
-			border-radius: 3px;
-			border: 1px solid #ccc;
-		}
 
-		#signup-btn{
+		#login-btn{
 			height:48px;
 			margin: 5px 0px;
 			margin-top:20px;
@@ -74,7 +65,7 @@
 			color:skyblue;
 		}
 
-		#signup-btn:hover{
+		#login-btn:hover{
 			background-color: #1a1a1a;
 		}
 
@@ -99,7 +90,7 @@
 			display: flex;
 			flex-direction: column;
 			width:400px;
-			height:470px;
+			height:370px;
 			padding: 15px;
 			border-radius: 15px;
 			background: rgba(255, 255, 255, 0.1);
@@ -130,19 +121,19 @@
 <body>
 	<form action="">
 		<div class="container">
-			<h4>SIGN UP</h4>
-			<input id="username" type="text" placeholder="Username" required>
-			<input id="email" type="email" placeholder="Email" required>
-			<input id="password" type="password" placeholder="Password" required>
-			<button type="submit" id="signup-btn">CREATE ACCOUNT</button>
+			<h4>MEMBER LOGIN</h4>
+			<input id="username" type="text" placeholder="Username">
+			<input id="password" type="password" placeholder="Password">
+			<button type="submit" id="login-btn">LOGIN</button>
 			<div class="chkboxAforg">
 			  <input type="checkbox" id="chkbox" >
-			  <label for="chkbox" style="color:#c3d3d4;margin-right:65px;">I agree to the terms & conditions</label>
+			  <label for="chkbox" style="color:#c3d3d4;margin-right:50px;">Remember me</label>
+			  <a href="#" style="text-decoration: none; color:#c3d3d4;font-style: italic;">Forgot Password?</a>
 			</div>
 		</div>
 
 		<div class="create" style="display: flex; justify-content: center; align-content: center;">
-			<button type="submit" id="create-acc-btn"><a href="sign_up.html">LOGIN</a></button>
+			<button type="submit" id="create-acc-btn"><a href="sign_up.html">CREATE ACCOUNT</a></button>
 		</div>
 	</form>
 </body>

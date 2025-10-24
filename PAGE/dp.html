@@ -13,119 +13,144 @@
   <!-- Navbar trên cùng -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <img style="margin-right:15px;" src="../IMG/lg.png" alt="Die">
-      <a class="navbar-brand" href="#">TLTT</a>
+      <img style="margin-right:15px;" src="../IMG/lg.png" alt="Die" width="38" height="38">
+      <a class="navbar-brand" href="index.html">TLTT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ </a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Giới thiệu </a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Liên hệ </a></li>
+          <li class="nav-item"><a class="nav-link" href="#cont-abo">Liên hệ </a></li>
+          <li class="nav-item"><a class="nav-link" href="#cont-abo">Giới thiệu </a></li>
         </ul>
       </div>
     </div>
   </nav>
 
 
-<!-- Sidebar bên trái -->
-<div class="sidebar">
-  <h5 class="px-3">Thuật toán</h5>
-  <ul class="nav flex-column">
+  <!-- Sidebar bên trái -->
+  <div class="sidebar">
+    <h5 class="px-3">Thuật toán</h5>
+    <ul class="nav flex-column">
 
-    <!-- Thuật toán sắp xếp -->
-    <li class="nav-item">
-      <a class="nav-link text-dark" data-bs-toggle="collapse" href="#collapseSort" role="button" aria-expanded="false" aria-controls="collapseSort">
-        Thuật toán sắp xếp
-        <span class="chevron-icon">&#9662;</span>
-      </a>
-      <div class="collapse" id="collapseSort">
-        <ul class="nav flex-column ms-3">
+      <!-- Thuật toán sắp xếp -->
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-bs-toggle="collapse" href="#collapseSort" role="button" aria-expanded="false" aria-controls="collapseSort">
+          Thuật toán sắp xếp
+          <span class="chevron-icon">&#9662;</span>
+        </a>
+        <div class="collapse" id="collapseSort">
+          <ul class="nav flex-column ms-3">
+            <li class="nav-item">
+              <a class="nav-link" href="bubble_sort.html">Bubble Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="insertion_sort.html">Insertion Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="selection_sort.html">Selection Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="merge_sort.html">Merge Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quick_sort.html">Quick Sort</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Thuật toán tìm kiếm -->
+      <li class="nav-item mt-2">
+        <a class="nav-link text-dark" data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseSearch">
+          Thuật toán tìm kiếm
+          <span class="chevron-icon">&#9662;</span>
+        </a>
+        <div class="collapse" id="collapseSearch">
+          <ul class="nav flex-column ms-3">
+            <li class="nav-item">
+              <a class="nav-link" href="binary_search.html">Binary Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="linear_search.html">Linear Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jump_search.html">Jump Search</a>
+            </li>
           <li class="nav-item">
-            <a class="nav-link" href="bubble_sort.html">Bubble Sort</a>
+            <a class="nav-link" href="#">Sentinal Linear Search</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="insertion_sort.html">Insertion Sort</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="selection_sort.html">Selection Sort</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="merge_sort.html">Merge Sort</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="quick_sort.html">Quick Sort</a>
-          </li>
-        </ul>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Quy hoạch động -->
+      <li class="nav-item mt-2">
+        <a class="nav-link active" href="#">Quy hoạch động</a>
+      </li>
+
+      <!-- Đệ quy -->
+      <li class="nav-item mt-2">
+        <a class="nav-link" href="recursion.html">Đệ Quy (Recursion)</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <div id="dp-parag">
+    <h1>Giới thiệu về quy hoạch động</h1>
+    <hr>
+    <p>Trong ngành khoa học máy tính, quy hoạch động (dynamic programming) là một phương pháp giảm thời gian chạy của các thuật toán thể hiện các tính chất của các bài toán con gối nhau (overlapping subproblem) và cấu trúc con tối ưu (optimal substructure).</p>
+
+    <h5 style="background-color:yellow;display:inline">Ta có thể giải một bài toán với cấu trúc con tối ưu bằng một quy trình ba bước:</h5>
+    <ol>
+        <li>Chia bài toán thành các bài toán con nhỏ hơn.</li>
+        <li>Giải các bài toán này một cách tối ưu bằng cách sử dụng đệ quy quy trình ba bước này.</li>
+        <li>Sử dụng các kết quả tối ưu đó để xây dựng một lời giải tối ưu cho bài toán ban đầu.</li> 
+    </ol>
+
+    <p>Ở một số bài toán (Ví dụ: tính số fibonacci) ta có  lưu trữ lời giải của các bài toán con đã giải. Nếu sau này ta cần giải lại chính bài toán đó, ta có thể lấy và sử dụng kết quả đã được tính toán. Hướng tiếp cận này được gọi là lưu trữ (memoization). Để tránh, tốn thời gian tính toán lại lời giải tối ưu cho các bài toán con mà nó đã giải.</p>
+
+    <h5 style="background-color:yellow;display:inline">Tóm lại, quy hoạch động sử dụng:</h5>
+    <ul>
+      <li>Các bài toán con gối nhau</li>
+      <li>Cấu trúc con tối ưu</li>
+      <li>Memoization</li>
+    </ul>
+
+    <h5 style="background-color:yellow;display:inline">Quy hoạch động thường dùng một trong hai cách tiếp cận:</h5>
+    <ul>
+      <li> top-down (Từ trên xuống) </li>
+      <li> bottom-up (Từ dưới lên) </li>
+    </ul>
+  </div>
+
+  <!--Footer-->
+  <footer id="cont-abo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5 class="text-uppercase fw-bold">Về TLTT</h5>
+          <p class="mb-0">
+            TLTT (Tài Liệu Thuật Toán) là nơi chia sẻ kiến thức, ví dụ và hướng dẫn học thuật toán 
+            một cách dễ hiểu, giúp bạn nắm vững tư duy lập trình.
+          </p>
+        </div>
+
+        <!-- Liên hệ -->
+        <div class="col-md-6 mb-3">
+          <h5 class="text-uppercase fw-bold">Liên hệ</h5>
+          <p class="mb-1">📩 Email: <a href="tltt.contact@gmail.com" class="text-light">tltt.contact@gmail.com</a></p>
+          <p class="mb-1">🌐 Website: <a href="#" class="text-light text-decoration-none">www.tltt.vn</a></p>
+          <p class="mb-0">💬 Facebook: <a href="https://facebook.com/tltt" class="text-light text-decoration-none">facebook.com/tltt</a></p>
+        </div>
       </div>
-    </li>
 
-    <!-- Thuật toán tìm kiếm -->
-    <li class="nav-item mt-2">
-      <a class="nav-link text-dark" data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseSearch">
-        Thuật toán tìm kiếm
-        <span class="chevron-icon">&#9662;</span>
-      </a>
-      <div class="collapse" id="collapseSearch">
-        <ul class="nav flex-column ms-3">
-          <li class="nav-item">
-            <a class="nav-link" href="binary_search.html">Binary Search</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ternary Search</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="linear_search.html">Linear Search</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="jump_search.html">Jump Search</a>
-          </li>
-        </ul>
-      </div>
-    </li>
-
-    <!-- Quy hoạch động -->
-    <li class="nav-item mt-2">
-      <a class="nav-link active" href="#">Quy hoạch động</a>
-    </li>
-
-    <!-- Đệ quy -->
-    <li class="nav-item mt-2">
-      <a class="nav-link" href="recursion.html">Đệ Quy (Recursion)</a>
-    </li>
-
-  </ul>
-</div>
-
-      <div id="dp-parag">
-        <h1>Giới thiệu về quy hoạch động</h1>
-        <hr>
-        <p>Trong ngành khoa học máy tính, quy hoạch động (dynamic programming) là một phương pháp giảm thời gian chạy của các thuật toán thể hiện các tính chất của các bài toán con gối nhau (overlapping subproblem) và cấu trúc con tối ưu (optimal substructure).</p>
-
-        <h5 style="background-color:yellow;display:inline">Ta có thể giải một bài toán với cấu trúc con tối ưu bằng một quy trình ba bước:</h5>
-        <ol>
-            <li>Chia bài toán thành các bài toán con nhỏ hơn.</li>
-            <li>Giải các bài toán này một cách tối ưu bằng cách sử dụng đệ quy quy trình ba bước này.</li>
-            <li>Sử dụng các kết quả tối ưu đó để xây dựng một lời giải tối ưu cho bài toán ban đầu.</li> 
-        </ol>
-
-        <p>Ở một số bài toán (Ví dụ: tính số fibonacci) ta có  lưu trữ lời giải của các bài toán con đã giải. Nếu sau này ta cần giải lại chính bài toán đó, ta có thể lấy và sử dụng kết quả đã được tính toán. Hướng tiếp cận này được gọi là lưu trữ (memoization). Để tránh, tốn thời gian tính toán lại lời giải tối ưu cho các bài toán con mà nó đã giải.</p>
-
-        <h5 style="background-color:yellow;display:inline">Tóm lại, quy hoạch động sử dụng:</h5>
-        <ul>
-          <li>Các bài toán con gối nhau</li>
-          <li>Cấu trúc con tối ưu</li>
-          <li>Memoization</li>
-        </ul>
-
-        <h5 style="background-color:yellow;display:inline">Quy hoạch động thường dùng một trong hai cách tiếp cận:</h5>
-        <ul>
-          <li> top-down (Từ trên xuống) </li>
-          <li> bottom-up (Từ dưới lên) </li>
-        </ul>
-      </div>
-
+      <hr class="border-light">
+      <p class="text-center mb-0">© 2025 TLTT — Tài liệu thuật toán. Mọi quyền được bảo lưu.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
