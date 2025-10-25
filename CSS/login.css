@@ -1,0 +1,111 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	background: linear-gradient(135deg, #bfcad1, #7b8b93, #3a434a);
+	background-size: cover;
+	font-family: "Poppins", sans-serif;
+}
+
+
+#username{
+	margin: 5px 0px;
+	margin-top: 50px;
+	height: 50px;
+	padding: 7px;
+	padding-left: 15px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+#password{
+	margin: 5px 0px;
+	margin-top: 20px;
+	height: 50px;
+	padding: 7px;
+	padding-left: 15px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+
+#login-btn{
+	height:48px;
+	margin: 5px 0px;
+	margin-top:20px;
+	background-color: #333;
+	border:none;
+	color:white;
+	cursor: pointer;
+}
+
+#create-acc-btn{
+	background: none;
+	border:none;
+	cursor: pointer;
+}
+
+.create a{
+	text-decoration: none;
+	font-size:20x;
+	color:cornsilk;
+	letter-spacing: 3px;
+}
+
+#login-btn:hover{
+	background-color: #1a1a1a;
+}
+
+h4{
+	text-align: center;
+	color:white; 
+	font-weight: normal; 
+	font-size: 23px;
+	letter-spacing: 5px;
+}
+
+
+.chkboxAforg{
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+	margin-top:20px;
+
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	width:400px;
+	height:370px;
+	padding: 15px;
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	padding: 40px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.create {
+	display: flex;
+	margin-top: 15px;
+	flex-direction: column;
+	width:400px;
+	height:80px;
+	padding: 15px;
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	padding: 40px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+

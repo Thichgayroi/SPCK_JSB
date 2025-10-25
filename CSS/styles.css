@@ -12,7 +12,7 @@
 
 .content {
   margin-left: 220px;
-  margin-top: 100px; /* tránh đè lên navbar */
+  margin-top: 40px; /* tránh đè lên navbar */
   padding: 20px;
   background:#f1f1f1; 
   border:1px solid #ccc; 
@@ -45,7 +45,7 @@
 
 .navbar {
   display: flex;
-  justify-content: flex-start; /* đẩy sang trái */
+  justify-content: flex-start;
   background: #222;
   padding: 10px;
 }
@@ -85,23 +85,6 @@
   height:50px
 }
 
-/*Binary search*/
-#bse{
-  background:#fff;
-  border:1px solid #ddd; 
-  padding:10px; 
-  border-left:5px solid green;
-  height:560px;
-}
-
-/*Insertion sort*/
-#is{
-  background:#fff;
-  border:1px solid #ddd; 
-  padding:10px; 
-  border-left:5px solid green;
-  height:400px;
-}
 
 
 /*Đệ quy*/
@@ -113,14 +96,6 @@
   width:800px;
 }
 
-/*Linear Search*/
-#lse{
-  background:#fff;
-  border:1px solid #ddd; 
-  padding:10px; 
-  border-left:5px solid green;
-  height:350px;
-}
 
 #rec-c{
   padding: 20px;
@@ -148,13 +123,89 @@
   width:800px;
 }
 
-#jse{
-  background:#fff;
-  border:1px solid #ddd; 
-  padding:10px; 
-  border-left:5px solid green;
-  height:930px;
+
+/*Bubble sort*/
+.bbs{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
 }
+
+/*Insertion sort*/
+.insrts{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+/*Selection sort*/
+.selecs{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+/*Merge sort*/
+.mergs{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+/*Quick sort*/
+.quicks{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+/*Binary search*/
+.binasea{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+/*Linear search*/
+.linesea{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+/*Jump search*/
+.jumpsea{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+/*Sentinal Linear search*/
+.senlinesea{
+  margin-left: 220px;
+  margin-top: 100px;
+  padding: 20px;
+  margin-left:230px;
+  width:800px;
+}
+
+
 
 /* Footer */
 footer {

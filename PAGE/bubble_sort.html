@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Chủ</title>
+  <title>Bubble sort</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../CSS/styles.css">
@@ -78,7 +78,7 @@
             <a class="nav-link" href="jump_search.html">Jump Search</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sentinal Linear Search</a>
+            <a class="nav-link" href="sen_linear_search.html">Sentinal Linear Search</a>
           </li>
         </ul>
       </div>
@@ -96,6 +96,23 @@
 
   </ul>
 </div>
+
+  <!-- Chi tiết về thuật toán -->
+  <div class="bbs">
+    <h1>Bubble sort</h1>
+    <hr>
+    <p>Xét một mảng gồm n số nguyên</p>
+    <ul>
+      <li>Với cách sắp xếp không giảm từ trái qua phải, mục đích của chúng ta là đưa dần các số lớn nhất về cuối dãy (ngoài cùng bên phải).</li>
+      <br>
+      <li>Bắt đầu từ vị trí số 1, xét lần lượt từng cặp 2 phần tử, nếu phần tử bên phải nhỏ hơn phần tử bên trái, ta sẽ thực hiện đổi chỗ 2 phần tử này, nếu không, xét tiếp cặp tiếp theo. Với cách làm như vậy, phần tử nhỏ hơn sẽ "nổi" lên, còn phần tử lớn hơn sẽ "chìm" dần và về bên phải</li>
+      <br>
+      <li>Khi kết thúc vòng thứ nhất, ta sẽ đưa được phần tử lớn nhất về cuối dãy. Sang vòng thứ hai, ta tiếp tục bắt đầu ở vị trí đầu tiên như vậy và đưa được phần tử lớn thứ hai về vị trí thứ hai ở cuối dãy ...</li>
+      <br>
+      <li>Hình ảnh minh họa thuật toán:</li>
+    </ul>
+    <img src="../IMG/bbs.png" alt="-_-">
+  </div>
 
   <!-- Code thuật toán -->
    <div class="content">

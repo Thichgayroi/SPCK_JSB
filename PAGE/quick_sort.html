@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Chủ</title>
+  <title>Quick Sort</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../CSS/styles.css">
@@ -78,7 +78,7 @@
             <a class="nav-link" href="jump_search.html">Jump Search</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sentinal Linear Search</a>
+            <a class="nav-link" href="sen_linear_search.html">Sentinal Linear Search</a>
           </li>
         </ul>
       </div>
@@ -97,9 +97,26 @@
   </ul>
 </div>
 
+  <!-- Chi tiết về thuật toán -->
+  <div class="quicks">
+    <h1>Quick sort</h1>
+    <hr>
+    <p>Xét một mảng gồm n số nguyên</p>
+    <ul>
+      <li>Chọn pivot(chốt): Chọn một phần tử từ mảng làm chốt . Lựa chọn chốt có thể khác nhau (ví dụ: phần tử đầu tiên, phần tử cuối cùng, phần tử ngẫu nhiên hoặc trung bình).</li>
+      <br>
+      <li>Phân vùng mảng: Sắp xếp lại mảng xung quanh trục. Sau khi phân vùng, tất cả các phần tử nhỏ hơn chốt sẽ ở bên trái của nó và tất cả các phần tử lớn hơn chốt sẽ ở bên phải của nó. Sau đó, chốt ở đúng vị trí của nó và chúng ta thu được chỉ số của chốt.</li>
+      <br>
+      <li>Gọi đệ quy: Áp dụng đệ quy cùng một quy trình cho hai mảng con được phân vùng (bên trái và bên phải của chốt).</li>
+      <br>
+      <li>Hình ảnh minh họa thuật toán:</li>
+    </ul>
+    <img src="../IMG/quicks.png" alt="-_-">
+  </div>
+
    <div class="content">
 	    <h5 class="card-title">Python</h5>
-    <div id="bse">
+    <div class="card_mt-3" style="height:550px;">
       	<pre>
 def partition(array, low, high):
   pivot = array[high]

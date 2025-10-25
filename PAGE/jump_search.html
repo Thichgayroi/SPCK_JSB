@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Chủ</title>
+  <title>Jump search</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../CSS/styles.css">
@@ -78,7 +78,7 @@
             <a class="nav-link active" href="#">Jump Search</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sentinal Linear Search</a>
+            <a class="nav-link" href="sen_linear_search.html">Sentinal Linear Search</a>
           </li>
         </ul>
       </div>
@@ -97,9 +97,34 @@
   </ul>
 </div>
 
+
+  <!-- Chi tiết về thuật toán -->
+  <div class="jumpsea">
+    <h1>Jump search</h1>
+    <hr>
+    <p>Xét một mảng đã được sắp xếp:</p>
+    <ul>
+      <li>giả sử chúng ta có một mảng arr [] kích thước n và khối (được nhảy) kích thước m. Sau đó, chúng tôi tìm kiếm tại các chỉ mục arr [0], arr [m], arr [2m]… ..arr [km], v.v. Khi chúng ta tìm được khoảng (arr [km] < x < arr [(k + 1) m]), chúng ta thực hiện phép toán tìm kiếm tuyến tính từ chỉ số km để tìm phần tử x.</li>
+      <br>
+      <li>Hãy xem xét mảng sau: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610). Độ dài của mảng là 16. Tìm kiếm theo bước nhảy sẽ tìm thấy giá trị là 55 với các bước sau giả sử rằng kích thước khối được nhảy là 4. 
+        <ul>
+          <li>BƯỚC 1: Chuyển từ chỉ số 0 sang chỉ số 4;</li>
+          <li>BƯỚC 2: Chuyển từ chỉ số 4 sang chỉ số 8;</li>
+          <li>BƯỚC 3: Chuyển từ chỉ số 8 sang chỉ số 12;</li>
+          <li>BƯỚC 4: Vì phần tử ở chỉ số 12 lớn hơn 55 nên chúng ta sẽ lùi lại một bước để đến chỉ số 8.</li>
+          <li>BƯỚC 5: Thực hiện tìm kiếm tuyến tính từ chỉ số 8 để lấy phần tử 55.</li>
+        </ul>
+      </li>
+      <br>
+      <li>Hình ảnh minh họa thuật toán:</li>
+    </ul>
+    <img src="../IMG/jumpsea.png" alt="-_-">
+  </div>
+
+
    <div class="content">
 	    <h5 class="card-title">Python</h5>
-    <div id="jse">
+    <div class="card_mt-3" style="height:870px;">
 
       	<pre>
 import math
