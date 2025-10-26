@@ -6,9 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (loggedInUser) {
     // Nếu đã đăng nhập -> hiện avatar + nút đăng xuất
     userInfo.style.display = "flex";
-  } else {
-    // Nếu chưa đăng nhập -> chuyển về trang login
-    userInfo.style.display = "none";
   }
 });
 
